@@ -26,3 +26,5 @@ if __name__=='__main__':  # Created by Ian Cabrera
             print(f'The encoded password is {password}, and the original password is {decoded_pass}.\n')
         elif user_input == 3:
             break
+
+# I need to make some changes to the code for full marks and push it, so how was your day? - Ian
