@@ -8,8 +8,13 @@ def encode(user_in):  # Created by Ian Cabrera
     return output
 
 def decode(user_in):
-    pass     # FIXME
-
+    decoded_pass = ''
+    for char in user_in:
+        subtract = int(char) - 3  # Subtract 3 from the current encoded digit
+        if subtract < 0:
+            subtract += 10  # If the result is negative, make it positive by adding 10
+        decoded_pass += str(subtract)
+    return decoded_pass
 
 if __name__=='__main__':  # Created by Ian Cabrera
     password = ''
